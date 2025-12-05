@@ -1,5 +1,5 @@
 {% set name = "briefcase" %}
-{% set version = "0.3.25" %}
+{% set version = "0.3.26" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/briefcase-{{ version }}.tar.gz
-  sha256: 0d3ca50714da8bed30e80ea33f322e6b8be7e80a1fb651814d98561aa269de72
+  sha256: ebde1b0e899c5d1107737694f8d6070b60706c4260ce787915b72f29d6c8413d
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
   host:
     - python {{ python_min }}
     - setuptools ==80.9.0
-    - setuptools-scm ==9.2.0
+    - setuptools-scm ==9.2.2
     - pip
   run:
     - python >={{ python_min }}
