@@ -1,5 +1,5 @@
 {% set name = "briefcase" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/briefcase-{{ version }}.tar.gz
-  sha256: d11beb13324091d1e651ed6e81a15c68719262cbfb7b953a14297d2b900cda20
+  sha256: 8064649697a3eb50f700109e7baea1c735a38e610fca1e6df499abebd610cb0a
 
 build:
   noarch: python
@@ -32,6 +32,7 @@ requirements:
     - truststore >=0.10.1
     - cookiecutter >=2.6.0,<3.0
     - chardet <6.0
+    - binaryornot <0.5.0
     - dmgbuild >=1.6.4,<2.0  # [osx]
     - gitpython >=3.1,<4.0
     - platformdirs >=2.6,<5.0
