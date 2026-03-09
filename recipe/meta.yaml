@@ -32,6 +32,7 @@ requirements:
     - truststore >=0.10.1
     - cookiecutter >=2.6.0,<3.0
     - chardet <6.0
+    - binaryornot <0.5.0
     - dmgbuild >=1.6.4,<2.0  # [osx]
     - gitpython >=3.1,<4.0
     - platformdirs >=2.6,<5.0
