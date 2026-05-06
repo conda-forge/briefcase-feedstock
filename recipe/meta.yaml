@@ -19,8 +19,8 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools ==82.0.0
-    - setuptools-scm ==9.2.2
+    - setuptools ==82.0.1
+    - setuptools-scm ==10.0.5
     - pip
   run:
     - python >={{ python_min }}
@@ -39,7 +39,8 @@ requirements:
     - psutil >=5.9,<8.0
     - python-dateutil >=2.9.0.post0
     - httpx >=0.20,<1.0
-    - rich >=12.6,<15.0
+    - rich >=12.6,<16.0
+    - tenacity >=8.0,<10.0
     - tomli >=2.0,<3.0
     - tomli-w >=1.0,<2.0
     - __unix  # [unix]
