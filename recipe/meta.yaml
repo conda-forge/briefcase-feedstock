@@ -1,5 +1,5 @@
 {% set name = "briefcase" %}
-{% set version = "0.4.3" %}
+{% set version = "0.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/briefcase-{{ version }}.tar.gz
-  sha256: 9814899daab8c5f1faeb96896986986948668d6effc32fe25ed850e2cc81b29d
+  sha256: e6e1a9d6811e2436fa2bfb2ecafdd12605e3920473946c09562fb9c9526e60ac
 
 build:
   noarch: python
