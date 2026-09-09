@@ -1,13 +1,13 @@
 {% set name = "briefcase" %}
-{% set version = "0.4.4" %}
+{% set version = "0.4.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/briefcase-{{ version }}.tar.gz
-  sha256: e6e1a9d6811e2436fa2bfb2ecafdd12605e3920473946c09562fb9c9526e60ac
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/briefcase-{{ version }}.tar.gz
+  sha256: b3c9e2f781ad6ca9e241a73ca80660624fed86db5b3e65a80b7a5bb697d54741
 
 build:
   noarch: python
@@ -19,8 +19,8 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools ==82.0.1
-    - setuptools-scm ==10.2.0
+    - setuptools ==84.0.0
+    - setuptools-scm ==10.2.1
     - pip
   run:
     - python >={{ python_min }}
@@ -31,8 +31,7 @@ requirements:
     - python-build >=0.10
     - truststore >=0.10.1
     - cookiecutter >=2.6.0,<3.0
-    - chardet <6.0
-    - binaryornot <0.5.0
+    - chardet <8.0
     - dmgbuild >=1.6.4,<2.0  # [osx]
     - gitpython >=3.1,<4.0
     - platformdirs >=2.6,<5.0
@@ -41,8 +40,8 @@ requirements:
     - httpx >=0.20,<1.0
     - rich >=12.6,<16.0
     - tenacity >=8.0,<10.0
-    - tomli >=2.0,<3.0
     - tomli-w >=1.0,<2.0
+    - typing_extensions >=4.6
     - __unix  # [unix]
     - __win   # [win]
     - __osx   # [osx]
