@@ -1,5 +1,5 @@
 {% set name = "briefcase" %}
-{% set version = "0.4.5" %}
+{% set version = "0.4.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/briefcase-{{ version }}.tar.gz
-  sha256: b3c9e2f781ad6ca9e241a73ca80660624fed86db5b3e65a80b7a5bb697d54741
+  sha256: d8a78ff8acc97c5df6ad15560f2fb2e8508476e1ea1b331ef4cae6839dbbf804
 
 build:
   noarch: python
