@@ -8,3 +8,7 @@ github:
 conda_build:
   error_overlinking: true
 conda_forge_output_validation: true
+remote_ci_setup:
+  - conda-forge-ci-setup=4
+  - conda-build>=26.3
+  - libmambapy<2.10
