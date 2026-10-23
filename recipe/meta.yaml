@@ -29,7 +29,6 @@ requirements:
     - setuptools >=60
     - wheel >=0.37
     - xbuild >=0.4.0
-    - truststore >=0.10.1
     - cookiecutter >=2.6.0,<3.0
     - chardet <8.0
     - dmgbuild >=1.6.4,<2.0  # [osx]
